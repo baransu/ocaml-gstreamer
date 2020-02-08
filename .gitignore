@@ -23,3 +23,8 @@ examples/Makefile.decode
 examples/Makefile.encode
 .*sw*
 *~
+_esy
+_build
+
+.merlin
+*.install

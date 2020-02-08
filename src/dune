@@ -1,5 +1,3 @@
 (library
   (name gstreamer)
-  (public_name gstreamer)
-  (library_flags (:include flags.sexp))
-  (c_library_flags (:include c_library_flags.sexp)))
+  (public_name gstreamer))
