@@ -12,7 +12,7 @@ depends: [
   "ocamlfind" {build}
 ]
 build: [
-  ["./bootstrap"] {dev}
+  ["./bootstrap"]
   ["./configure" "--prefix" prefix]
   [make "clean"] {dev}
   [make]
