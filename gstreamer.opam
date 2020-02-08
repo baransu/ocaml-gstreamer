@@ -17,7 +17,8 @@ build: [
   [make "clean"] {dev}
   [make]
 ]
-install: [make "install"]
+install: [
+]
 depexts: [
   ["gstreamer-dev" "gst-plugins-base-dev"] {os-distribution = "alpine"}
   ["gstreamer-devel" "gstreamer-plugins-base-devel"]
