@@ -5,8 +5,8 @@ open Gstreamer
 let () =
   init ();
   Printf.printf "%s\n%!" (version_string ());
-  let bin = Pipeline.parse_launch "v4l2src ! queue ! vp8enc ! rtpvp8pay ! application/x-rtp,media=video,encoding-name=VP8,payload=96 ! webrtcbin name=sendrecv" in
-  let webrtc = Bin.get_by_name bin "sendrecv" in
+  let bin = Pipeline.parse_launch "videotestsrc pattern=ball is-live=true ! vp8enc ! rtpvp8pay ! application/x-rtp,media=video,encoding-name=VP8,payload=96 ! webrtcbin name=sendrecv" in
+  let _webrtc = Bin.get_by_name bin "sendrecv" in
   ignore (Element.set_state bin Element.State_playing);
   Unix.sleep 5;
   ignore (Element.set_state bin Element.State_null);
