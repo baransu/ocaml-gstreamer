@@ -1,0 +1,4 @@
+(executable
+    (name webrtc)
+    (public_name webrtc)
+    (libraries gstreamer))

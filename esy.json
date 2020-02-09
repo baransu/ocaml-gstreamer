@@ -2,7 +2,8 @@
   "name": "gstreamer",
   "version": "0.3.0",
   "esy": {
-    "build": "dune build -p #{self.name}"
+    "build": "dune build -p #{self.name}",
+    "buildsInSource": true
   },
   "dependencies": {
     "@esy-ocaml/reason": "*",
