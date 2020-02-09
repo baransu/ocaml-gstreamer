@@ -7,7 +7,7 @@
   (name gstreamer)
   (public_name gstreamer)
   (flags (-w -40 -w +26))
-  (libraries bigarray)
+  (libraries bigarray threads)
   (c_library_flags (:include c_library_flags.sexp))
   (c_flags (:include c_flags.sexp))
   (c_names gstreamer_stubs))
